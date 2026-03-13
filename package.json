@@ -12,8 +12,10 @@
     "next": "latest",
     "react": "^19",
     "react-dom": "^19",
+    "react-tweet": "^3.3.0",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
     "@types/node": "^20.14.8",
