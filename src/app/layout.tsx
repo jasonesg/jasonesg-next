@@ -1,7 +1,6 @@
-import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 
 import "./globals.css";
 
@@ -52,10 +51,21 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-F4EXNB5M6V"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-F4EXNB5M6V');
+          `}
+        </Script>
       </head>
       <body className="bg-background text-foreground transition-colors duration-300 min-h-screen">
         {children}
-        <GoogleAnalytics gaId="G-F4EXNB5M6V" />
       </body>
     </html>
   );
