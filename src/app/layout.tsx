@@ -5,10 +5,10 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: `Next.js Blog Example with ${CMS_NAME}`,
-  description: `A statically generated blog example using Next.js and ${CMS_NAME}.`,
+  title: "Jason Esguerra",
+  description: "Personal portfolio and blog of Jason Esguerra.",
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    images: ["/images/jason-irl.jpg"],
   },
 };
 
@@ -54,8 +54,8 @@ export default function RootLayout({
       </head>
       <body className="bg-background text-foreground transition-colors duration-300 min-h-screen">
         {children}
-        <GoogleAnalytics gaId="G-F4EXNB5M6V" />
       </body>
+      <GoogleAnalytics gaId="G-F4EXNB5M6V" />
     </html>
   );
 }
