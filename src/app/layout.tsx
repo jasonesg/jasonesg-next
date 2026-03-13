@@ -51,6 +51,11 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+      </head>
+      <body className="bg-background text-foreground transition-colors duration-300 min-h-screen">
+        {children}
+        
+        {/* Scripts moved here! 👇 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-F4EXNB5M6V"
           strategy="afterInteractive"
@@ -63,9 +68,6 @@ export default function RootLayout({
             gtag('config', 'G-F4EXNB5M6V');
           `}
         </Script>
-      </head>
-      <body className="bg-background text-foreground transition-colors duration-300 min-h-screen">
-        {children}
       </body>
     </html>
   );
