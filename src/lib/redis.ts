@@ -1,10 +1,12 @@
 import { Redis } from "@upstash/redis";
 
-if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
-  throw new Error("Missing Upstash Redis environment variables.");
+const url = process.env.KV_REST_API_URL;
+const token = process.env.KV_REST_API_TOKEN;
+
+if (!url || !token) {
+  console.warn("Upstash Redis environment variables are missing. Redis features will be disabled.");
 }
 
-export const redis = new Redis({
-  url: process.env.KV_REST_API_URL,
-  token: process.env.KV_REST_API_TOKEN,
-});
+export const redis = url && token 
+  ? new Redis({ url, token }) 
+  : null;
