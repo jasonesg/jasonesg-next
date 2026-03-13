@@ -1,11 +1,9 @@
 import { PostTitle } from "@/app/_components/post-title";
 import { parseISO, format } from "date-fns";
-import { ViewsCounter } from "@/app/_components/views-counter";
 
 type Props = {
   title: string;
   date: string;
-  slug: string;
   twitter?: string;
 };
 
@@ -21,7 +19,7 @@ function timeAgo(dateString: string): string {
   return "today";
 }
 
-export function PostHeader({ title, date, slug, twitter }: Props) {
+export function PostHeader({ title, date, twitter }: Props) {
   const ago = timeAgo(date);
   const formatted = format(parseISO(date), "MMMM d, yyyy");
 
@@ -44,9 +42,6 @@ export function PostHeader({ title, date, slug, twitter }: Props) {
             </>
           )}
           <span className="whitespace-nowrap">{formatted} ({ago})</span>
-        </span>
-        <span className="whitespace-nowrap">
-          <ViewsCounter slug={slug} />
         </span>
       </div>
     </header>

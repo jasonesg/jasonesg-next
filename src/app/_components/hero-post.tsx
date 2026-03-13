@@ -1,6 +1,5 @@
 import Link from "next/link";
 import DateFormatter from "./date-formatter";
-import { ViewsCounter } from "./views-counter";
 
 type Props = {
   title: string;
@@ -17,9 +16,8 @@ export function HeroPost({
 }: Props) {
   return (
     <section className="mb-[60px]">
-      <div className="mb-[10px] text-[1em] opacity-70 flex justify-between items-center w-full">
+      <div className="mb-[10px] text-[1em] opacity-70">
         <DateFormatter dateString={date} />
-        <ViewsCounter slug={slug} noIncrement={true} />
       </div>
       <h3 className="mb-[15px] text-[1.5em] font-bold leading-tight">
         <Link href={`/posts/${slug}`} className="text-link hover:underline">

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import DateFormatter from "./date-formatter";
-import { ViewsCounter } from "./views-counter";
 
 type Props = {
   title: string;
@@ -17,9 +16,8 @@ export function PostPreview({
 }: Props) {
   return (
     <article>
-      <div className="mb-[10px] text-[1em] opacity-70 flex justify-between items-center w-full">
+      <div className="mb-[10px] text-[1em] opacity-70">
         <DateFormatter dateString={date} />
-        <ViewsCounter slug={slug} noIncrement={true} />
       </div>
       <h3 className="text-[1.25em] font-bold mb-[10px] leading-snug">
         <Link href={`/posts/${slug}`} className="text-link hover:underline">
