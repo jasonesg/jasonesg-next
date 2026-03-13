@@ -1,6 +1,6 @@
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 
@@ -54,20 +54,7 @@ export default function RootLayout({
       </head>
       <body className="bg-background text-foreground transition-colors duration-300 min-h-screen">
         {children}
-        
-        {/* Scripts moved here! 👇 */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-F4EXNB5M6V"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-F4EXNB5M6V');
-          `}
-        </Script>
+        <GoogleAnalytics gaId="G-F4EXNB5M6V" />
       </body>
     </html>
   );
