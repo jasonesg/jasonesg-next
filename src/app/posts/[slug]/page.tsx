@@ -30,7 +30,7 @@ export default async function Post(props: Params) {
             <PostHeader
               title={post.title}
               date={post.date}
-              views={post.views}
+              slug={post.slug}
               twitter={post.twitter}
             />
             {parts.map((part, i) =>
