@@ -1,6 +1,7 @@
 import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 
@@ -54,6 +55,7 @@ export default function RootLayout({
       </head>
       <body className="bg-background text-foreground transition-colors duration-300 min-h-screen">
         {children}
+        <GoogleAnalytics gaId="G-F4EXNB5M6V" />
       </body>
     </html>
   );
