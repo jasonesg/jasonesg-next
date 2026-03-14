@@ -23,7 +23,7 @@ export default function About() {
                                 >
                                     photographer
                                 </a>{" "}
-                                in Los Angeles, pre-AI. Now creating and crashing in San Francisco.
+                                in Los Angeles, pre-pandemic. Now crashing in San Francisco.
                             </p>
                             <p>
                                 Spent most of my time growing up{" "}
