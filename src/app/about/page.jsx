@@ -97,8 +97,8 @@ export default function About() {
 
                             {/* Targeted Focus Blur Layer */}
                             <div 
-                                className={`absolute -inset-4 bg-transparent z-10 pointer-events-none transition-[opacity,backdrop-filter] duration-300 ease-in-out ${isSFOpen ? 'opacity-100 backdrop-blur-[0.8px] dark:backdrop-blur-[4px]' : 'opacity-0 backdrop-blur-none'}`}
-                                style={{ willChange: 'opacity, backdrop-filter' }}
+                                className={`absolute -inset-4 z-10 pointer-events-none transition-all duration-300 ease-in-out ${isSFOpen ? 'opacity-100 backdrop-blur-[0.8px] dark:backdrop-blur-[4px] bg-foreground/5' : 'opacity-0 backdrop-blur-none bg-transparent'}`}
+                                style={{ willChange: 'opacity, backdrop-filter, background-color' }}
                             />
                         </div>
                     </main>
