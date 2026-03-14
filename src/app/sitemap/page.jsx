@@ -1,4 +1,3 @@
-import { NavClient } from "../_components/nav-client";
 import { SiteFooter } from "../_components/site-footer";
 import Link from "next/link";
 
@@ -13,7 +12,6 @@ const pages = [
 export default function Sitemap() {
     return (
         <>
-            <NavClient />
             <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[700px] lg:pl-[50px] lg:pr-0">
                 <div className="pt-[80px] pb-[50px] lg:pt-[40px]">
                     <header>

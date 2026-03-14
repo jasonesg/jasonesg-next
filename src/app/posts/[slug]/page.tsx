@@ -5,7 +5,6 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 import { TweetEmbed } from "@/app/_components/tweet-embed";
-import { NavClient } from "@/app/_components/nav-client";
 import { SiteFooter } from "@/app/_components/site-footer";
 
 export default async function Post(props: Params) {
@@ -23,7 +22,6 @@ export default async function Post(props: Params) {
 
   return (
     <>
-      <NavClient />
       <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[700px] lg:pl-[50px] lg:pr-0">
         <div className="pt-[80px] pb-[50px] lg:pt-[80px]">
           <article>

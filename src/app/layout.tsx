@@ -1,6 +1,7 @@
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { NavClient } from "./_components/nav-client";
 
 import "./globals.css";
 
@@ -52,7 +53,11 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body className="bg-background text-foreground transition-colors duration-300 min-h-screen">
+      <body className="bg-background text-foreground transition-colors duration-300 min-h-screen relative">
+        {/* Core Layout Texture (Halftone) */}
+        <div className="vignette-container" />
+        
+        <NavClient />
         {children}
       </body>
       <GoogleAnalytics gaId="G-F4EXNB5M6V" />
