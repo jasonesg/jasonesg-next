@@ -28,9 +28,10 @@ export async function POST(request) {
     });
 
     const data = await response.json();
+    console.log("Kit API response:", JSON.stringify(data));
 
     if (!response.ok) {
-      throw new Error(data.message || 'Error subscribing to newsletter');
+      throw new Error(JSON.stringify(data));
     }
 
     return NextResponse.json(
