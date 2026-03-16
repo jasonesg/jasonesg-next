@@ -28,7 +28,7 @@ export default function About() {
                                 >
                                     photographer
                                 </a>{" "}
-                                in Los Angeles, pre-pandemic. Now living in{" "}
+                                in Los Angeles, pre-AI age. Now living in{" "}
                                 <Tooltip open={isSFOpen} onOpenChange={setIsSFOpen}>
                                     <TooltipTrigger asChild>
                                         <span className={`cursor-help font-medium transition-all duration-300 ease-in-out ${isSFOpen ? 'relative z-[25]' : 'text-inherit border-b border-muted-foreground/30'}`}>
