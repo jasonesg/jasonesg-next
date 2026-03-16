@@ -28,7 +28,7 @@ export default function About() {
                                 >
                                     photographer
                                 </a>{" "}
-                                in Los Angeles, pre-pandemic. Now crashing in{" "}
+                                in Los Angeles, pre-pandemic. Now living in{" "}
                                 <Tooltip open={isSFOpen} onOpenChange={setIsSFOpen}>
                                     <TooltipTrigger asChild>
                                         <span className={`cursor-help font-medium transition-all duration-300 ease-in-out ${isSFOpen ? 'relative z-[25]' : 'text-inherit border-b border-muted-foreground/30'}`}>
@@ -67,7 +67,7 @@ export default function About() {
                                 >
                                     flipping video game skins
                                 </a>
-                                , and.. close enough to{" "}
+                                , and.. being close enough to{" "}
                                 <a
                                     href="https://www.youtube.com/watch?v=nPQdI2OD0IA"
                                     target="_blank"
