@@ -78,7 +78,7 @@ export default function About() {
                                 </a>
                             </p>
                             <p>
-                                I make videos that share what{" "}
+                                I make content that share what{" "}
                                 <a
                                     href="https://open.spotify.com/episode/4uDoJSpjXKiFINcUOtUliR"
                                     target="_blank"
