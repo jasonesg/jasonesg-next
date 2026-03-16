@@ -104,10 +104,10 @@
     }
 
 .dark .vignette-container {
-        /* Night Mode: Cinematic "80%" soft-focus texture */
-        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1.5px, transparent 1.5px);
+        /* Night Mode: No grid background */
+        background-image: none;
         background-size: 24px 24px;
-        filter: blur(4px); /* Increased blur for super subtle effect */
-        opacity: 0.5; /* Lowered opacity so it melts into the background */
+        filter: none;
+        opacity: 1;
     }
 }

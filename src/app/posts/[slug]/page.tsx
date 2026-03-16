@@ -6,6 +6,7 @@ import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 import { TweetEmbed } from "@/app/_components/tweet-embed";
 import { SiteFooter } from "@/app/_components/site-footer";
+import { NewsletterSignup } from "@/app/_components/newsletter-signup";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -37,6 +38,11 @@ export default async function Post(props: Params) {
                 <TweetEmbed key={i} id={part} />
               )
             )}
+            
+            {/* Newsletter signup component */}
+            <div className="mt-16 mb-8">
+              <NewsletterSignup location={`post-${params.slug}`} />
+            </div>
           </article>
 
           <SiteFooter />
