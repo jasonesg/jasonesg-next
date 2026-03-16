@@ -13,25 +13,26 @@ export async function POST(request) {
 
     const FORM_ID = process.env.CONVERTKIT_FORM_ID;
     const API_KEY = process.env.CONVERTKIT_API_KEY;
-    const API_URL = `https://api.kit.com/v4/forms/${FORM_ID}/subscribers`;
+    const API_URL = `https://api.convertkit.com/v3/forms/${FORM_ID}/subscribe`;
 
     const response = await fetch(API_URL, {
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${API_KEY}`,
-      },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        email_address: email,
+        api_key: API_KEY,
+        email,
         first_name: firstName || '',
-      })
+      }),
     });
 
     const data = await response.json();
-    console.log("Kit API response:", JSON.stringify(data));
 
     if (!response.ok) {
-      throw new Error(JSON.stringify(data));
+      console.error("ConvertKit API response:", response.status, data);
+      return NextResponse.json(
+        { error: data?.message || "Subscription failed." },
+        { status: response.status }
+      );
     }
 
     return NextResponse.json(
