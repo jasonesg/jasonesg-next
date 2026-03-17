@@ -103,11 +103,9 @@
         background-size: 32px 32px;
     }
 
-.dark .vignette-container {
-        /* Night Mode: No grid background */
-        background-image: none;
-        background-size: 24px 24px;
-        filter: none;
-        opacity: 1;
+    .dark .vignette-container {
+        /* Night Mode: Cinematic soft-focus texture without grid */
+        filter: blur(0.8px);
+        opacity: 0.9;
     }
 }

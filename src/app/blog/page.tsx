@@ -3,6 +3,7 @@ import { HeroPost } from "../_components/hero-post";
 import { MoreStories } from "../_components/more-stories";
 import { SiteFooter } from "../_components/site-footer";
 import { Button } from "@/components/ui/button";
+import { NewsletterSubscribe } from "../_components/newsletter-subscribe";
 import { LikeButton } from "@/uicapsule/like-button/like-button";
 
 export default function Blog() {
@@ -19,13 +20,6 @@ export default function Blog() {
                         <p className="mb-6 text-[1.1em] opacity-80 leading-relaxed max-w-[500px]">
                             Just some casual thoughts, technical write-ups, and portfolio updates.
                         </p>
-                        <div className="flex items-center gap-4 mb-10">
-                            <Button>Subscribe</Button>
-                            <Button variant="outline">Learn More</Button>
-                            <div className="ml-2 border-l pl-6 py-1 border-border">
-                                <LikeButton />
-                            </div>
-                        </div>
                     </header>
 
                     <main role="main">

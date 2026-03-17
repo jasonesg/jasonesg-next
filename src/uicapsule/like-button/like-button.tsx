@@ -9,7 +9,7 @@ export const LikeButton = ({ slug = "default" }: { slug?: string }) => {
   const [isLiked, setIsLiked] = useState(false);
   const iconButtonRef = useRef<null | HTMLButtonElement>(null);
 
-  const CLICK_CAP = 67;
+  const CLICK_CAP = Infinity;
 
   // Load session and global data on mount
   useEffect(() => {
@@ -22,7 +22,7 @@ export const LikeButton = ({ slug = "default" }: { slug?: string }) => {
     }
 
     // 2. Initial fetch of global total
-    fetch("/api/likes")
+    fetch(`/api/likes?slug=${slug}`)
       .then((res) => res.json())
       .then((data) => setTotalLikes(data.likes || 0))
       .catch((err) => console.error("Failed to fetch global likes:", err));
@@ -63,10 +63,7 @@ export const LikeButton = ({ slug = "default" }: { slug?: string }) => {
     <button
       ref={iconButtonRef}
       type="button"
-      disabled={isCapped}
-      className={`relative flex h-8 items-center gap-3 rounded-lg py-1 pr-3 transition-opacity ${
-        isCapped ? "cursor-not-allowed opacity-50" : "cursor-pointer hover:opacity-80"
-      }`}
+      className={`relative flex h-8 items-center gap-3 rounded-lg py-1 pr-3 transition-opacity cursor-pointer hover:opacity-80`}
       onClick={toggleLike}
     >
       <div className="relative flex items-center justify-center translate-y-[0.5px]">
@@ -84,11 +81,6 @@ export const LikeButton = ({ slug = "default" }: { slug?: string }) => {
       <span className="font-medium text-sm">
         <NumberFlow value={totalLikes} />
       </span>
-      {isCapped && (
-        <span className="text-[10px] uppercase tracking-wider opacity-60 font-bold ml-1">
-          MAX
-        </span>
-      )}
     </button>
   );
 };

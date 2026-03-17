@@ -6,7 +6,7 @@ import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 import { TweetEmbed } from "@/app/_components/tweet-embed";
 import { SiteFooter } from "@/app/_components/site-footer";
-import { NewsletterSignup } from "@/app/_components/newsletter-signup";
+import { NewsletterSubscribe } from "@/app/_components/newsletter-subscribe";
 
 export default async function Post(props: Params) {
   const params = await props.params;
@@ -30,6 +30,7 @@ export default async function Post(props: Params) {
               title={post.title}
               date={post.date}
               twitter={post.twitter}
+              slug={post.slug}
             />
             {parts.map((part, i) =>
               i % 2 === 0 ? (
@@ -39,9 +40,9 @@ export default async function Post(props: Params) {
               )
             )}
             
-            {/* Newsletter signup component */}
-            <div className="mt-16 mb-8">
-              <NewsletterSignup location={`post-${params.slug}`} />
+            {/* Newsletter Subscribe Section */}
+            <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col items-center">
+               <NewsletterSubscribe />
             </div>
           </article>
 

@@ -1,10 +1,12 @@
 import { PostTitle } from "@/app/_components/post-title";
 import { parseISO, format } from "date-fns";
+import { LikeButton } from "@/uicapsule/like-button/like-button";
 
 type Props = {
   title: string;
   date: string;
   twitter?: string;
+  slug: string;
 };
 
 function timeAgo(dateString: string): string {
@@ -19,7 +21,7 @@ function timeAgo(dateString: string): string {
   return "today";
 }
 
-export function PostHeader({ title, date, twitter }: Props) {
+export function PostHeader({ title, date, twitter, slug }: Props) {
   const ago = timeAgo(date);
   const formatted = format(parseISO(date), "MMMM d, yyyy");
 
@@ -41,7 +43,11 @@ export function PostHeader({ title, date, twitter }: Props) {
               <span>|</span>
             </>
           )}
-          <span className="whitespace-nowrap">{formatted} ({ago})</span>
+          <span className="whitespace-nowrap flex items-center gap-3">
+            {formatted} ({ago})
+            <span className="w-px h-3 bg-gray-300 dark:bg-gray-700"></span>
+            <span className="scale-[0.80] origin-left"><LikeButton slug={slug} /></span>
+          </span>
         </span>
       </div>
     </header>
