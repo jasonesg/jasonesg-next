@@ -40,10 +40,10 @@ export function NewsletterSubscribe() {
 
   return (
     <div className="w-full max-w-lg my-8">
-      <h3 className="text-2xl font-bold mb-2">
+      <h3 className="text-[16px] font-bold mb-2">
         Read more
       </h3>
-      <p className="text-lg opacity-80 mb-6">
+      <p className="text-[14px] opacity-80 mb-6">
         Subscribe to get notified when I publish new content.
       </p>
 
@@ -56,9 +56,9 @@ export function NewsletterSubscribe() {
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="your@email.com"
+          placeholder="Your email address"
           disabled={status === "loading" || status === "success"}
-          className="flex h-10 w-full flex-1 rounded-md border border-input bg-background/50 px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+          className="flex h-10 w-full flex-1 rounded-md border border-input bg-background/50 px-3 py-2 text-[14px] ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
           required
         />
         <Button 

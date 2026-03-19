@@ -18,7 +18,7 @@ export default function Contact() {
                                 </a>
                             </p>
 
-                            <div className="socials opacity-80" aria-label="Social links">
+                            <p className="socials" aria-label="Social links">
                                 Check out my{" "}
                                 <a
                                     href="https://twitter.com/jasonesg"
@@ -44,7 +44,7 @@ export default function Contact() {
                                 >
                                     tiktok
                                 </a>
-                            </div>
+                            </p>
                         </div>
                     </main>
 

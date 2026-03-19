@@ -35,22 +35,22 @@ export default function About() {
                                             San Francisco.
                                         </span>
                                     </TooltipTrigger>
-                                    <TooltipContent 
-                                        type="block" 
+                                    <TooltipContent
+                                        type="block"
                                         style={{ position: 'fixed', top: '15%', left: '75%', transform: 'none' }}
                                         className="p-0 overflow-hidden border-none bg-transparent z-[25]"
                                     >
                                         <div className="relative w-[320px] h-[200px] rounded-lg overflow-hidden bg-slate-900/40 border border-white/5 shadow-none backdrop-blur-sm">
-                                            <img 
-                                                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80" 
-                                                alt="San Francisco" 
+                                            <img
+                                                src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80"
+                                                alt="San Francisco"
                                                 className="absolute inset-0 w-full h-full object-cover opacity-60"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
                                             <div className="absolute bottom-0 left-0 p-5 w-full">
-                                                <h3 className="text-white font-bold text-lg mb-0.5 tracking-tight opacity-95">Current Base</h3>
+                                                <h3 className="text-white font-bold text-lg mb-0.5 tracking-tight opacity-95">Currently in</h3>
                                                 <p className="text-white/70 text-sm leading-relaxed">
-                                                    Building and exploring in the Fog City.
+                                                    Building and exploring in the bay area.
                                                 </p>
                                             </div>
                                         </div>
@@ -65,7 +65,7 @@ export default function About() {
                                     rel="noopener"
                                     className="text-link hover:underline"
                                 >
-                                    flipping video game skins
+                                    trading video game skins
                                 </a>
                                 , and.. being close enough to{" "}
                                 <a
@@ -96,8 +96,8 @@ export default function About() {
                             </p>
 
                             {/* Targeted Focus Blur Layer */}
-                            <div 
-                                className={`absolute -inset-4 z-10 pointer-events-none transition-all duration-300 ease-in-out ${isSFOpen ? 'opacity-100 backdrop-blur-[0.8px] dark:backdrop-blur-[4px] bg-transparent' : 'opacity-0 backdrop-blur-none bg-transparent'}`}
+                            <div
+                                className={`absolute -inset-4 z-10 pointer-events-none transition-all duration-300 ease-in-out ${isSFOpen ? 'opacity-100 backdrop-blur-[0.4px] dark:backdrop-blur-[1.5px] bg-transparent' : 'opacity-0 backdrop-blur-none bg-transparent'}`}
                                 style={{ willChange: 'opacity, backdrop-filter, background-color' }}
                             />
                         </div>

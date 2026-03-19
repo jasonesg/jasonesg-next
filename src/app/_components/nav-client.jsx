@@ -2,11 +2,18 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function NavClient() {
     const [timeString, setTimeString] = useState("00:00:00 AM");
     const [themeIcon, setThemeIcon] = useState("🫩");
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const pathname = usePathname();
+
+    // 0. Auto-close menu on navigation
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [pathname]);
 
     // 1. Clock Functionality
     useEffect(() => {
@@ -29,20 +36,28 @@ export function NavClient() {
     // 2. Auto-Theming (Tailwind 'dark' class)
     useEffect(() => {
         const htmlElement = document.documentElement;
-        const currentHour = new Date().getHours();
+        
+        // Initial icon sync (the head script handled the classList)
+        const isDark = htmlElement.classList.contains("dark");
+        setThemeIcon(isDark ? "🤠" : "🫩");
 
-        // 8 AM is 8, 8 PM is 20. Day time is >= 8 and < 20.
-        const timeBasedTheme = currentHour >= 8 && currentHour < 20 ? "light" : "dark";
-        const savedTheme = localStorage.getItem("theme");
-        const activeTheme = savedTheme ? savedTheme : timeBasedTheme;
+        // Listen for system theme changes
+        const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+        const handleChange = (e) => {
+            // Only auto-change if the user hasn't explicitly set a preference
+            if (!localStorage.getItem("theme")) {
+                const newTheme = e.matches ? "dark" : "light";
+                if (newTheme === "dark") {
+                    htmlElement.classList.add("dark");
+                } else {
+                    htmlElement.classList.remove("dark");
+                }
+                setThemeIcon(newTheme === "dark" ? "🤠" : "🫩");
+            }
+        };
 
-        if (activeTheme === "dark") {
-            htmlElement.classList.add("dark");
-        } else {
-            htmlElement.classList.remove("dark");
-        }
-
-        setThemeIcon(activeTheme === "dark" ? "🤠" : "🫩");
+        mediaQuery.addEventListener("change", handleChange);
+        return () => mediaQuery.removeEventListener("change", handleChange);
     }, []);
 
     // 3. Handle Manual Toggles
@@ -66,18 +81,11 @@ export function NavClient() {
             {/* Mobile Header Row */}
             <div className="flex items-center justify-between lg:hidden w-full">
                 <div className="flex items-center gap-[10px]">
-                    <button
-                        className="text-[14pt] leading-none transition-all duration-200 mt-0 px-[5px]"
-                        onClick={toggleTheme}
-                        aria-label="Toggle dark mode"
-                    >
-                        {themeIcon}
-                    </button>
                     <div className="font-mono text-[10pt] opacity-80" id="clock">{timeString}</div>
                 </div>
 
                 <button
-                    className="p-2 border border-border rounded text-[14pt] leading-none hover:bg-black/5 dark:hover:bg-white/5"
+                    className="p-2 text-[18pt] leading-none hover:bg-black/5 dark:hover:bg-white/5"
                     onClick={() => setIsMenuOpen(!isMenuOpen)}
                     aria-label="Toggle menu"
                 >
@@ -86,11 +94,11 @@ export function NavClient() {
             </div>
 
             {/* Navigation Links Area */}
-            <div className={`${isMenuOpen ? "block" : "hidden"} mt-4 overflow-hidden w-full lg:block lg:mt-0`}>
-                <Link href="/" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5">Home</Link>
-                <Link href="/about" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5">About me</Link>
-                <Link href="/blog" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5">Blog</Link>
-                <Link href="/contact" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5">Contact</Link>
+            <div className={`${isMenuOpen ? "flex" : "hidden"} flex-col items-end mt-4 overflow-hidden w-full lg:block lg:mt-0 lg:items-start`}>
+                <Link href="/" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Home</Link>
+                <Link href="/about" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">About me</Link>
+                <Link href="/blog" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Blog</Link>
+                <Link href="/contact" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Contact</Link>
             </div>
 
             {/* Desktop Extras Area (Hidden on mobile via lg:block wrapper) */}

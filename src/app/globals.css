@@ -65,8 +65,8 @@
     }
     body {
         @apply bg-background text-foreground;
-        font-family: 'Iowan Old Style BT', Georgia, serif;
-        font-size: 11pt;
+        font-size: 14px;
+        line-height: 1.4;
     }
 }
 

@@ -1,18 +1,18 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-sm leading-normal space-y-3;
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-3;
 }
 
 .markdown h2 {
-  @apply text-[1.5em] font-bold tracking-tight mt-[40px] mb-[20px] leading-snug;
+  @apply text-base font-bold mt-5 mb-2 leading-tight;
 }
 
 .markdown h3 {
-  @apply text-[1.2em] font-bold tracking-tight mt-[30px] mb-[15px] leading-snug;
+  @apply text-sm font-bold mt-4 mb-1 leading-snug;
 }

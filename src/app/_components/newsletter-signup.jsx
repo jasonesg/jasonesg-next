@@ -38,8 +38,8 @@ export function NewsletterSignup({ location = "blog" }) {
 
   return (
     <div className="w-full border border-border rounded-lg p-6 my-8 bg-background/50 backdrop-blur-sm">
-      <h3 className="text-lg font-bold mb-2">Stay updated</h3>
-      <p className="text-muted-foreground mb-4">Subscribe to get notified when I publish new content.</p>
+      <h3 className="text-[16px] font-bold mb-2">Stay updated</h3>
+      <p className="text-[14px] opacity-80 mb-4">Subscribe to get notified when I publish new content.</p>
       
       {status === "success" ? (
         <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-md p-4">
@@ -71,7 +71,7 @@ export function NewsletterSignup({ location = "blog" }) {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="your@email.com"
+                placeholder="Your email address"
                 required
                 className="w-full px-3 py-2 rounded-md border border-input bg-background"
               />
