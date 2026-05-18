@@ -90,7 +90,7 @@ export default function About() {
                             </p>
 
                             <p>
-                                I'm working on{" "}
+                                My eyes are set on{" "}
                                 <a
                                     href="https://houdys.com/"
                                     target="_blank"
