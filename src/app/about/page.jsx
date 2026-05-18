@@ -26,7 +26,7 @@ export default function About() {
                                     rel="noopener"
                                     className="text-link hover:underline"
                                 >
-                                    photographer
+                                    creative photographer
                                 </a>{" "}
                                 in Los Angeles, pre-AI age. Now living in{" "}
                                 <Tooltip open={isSFOpen} onOpenChange={setIsSFOpen}>
@@ -78,7 +78,7 @@ export default function About() {
                                 </a>
                             </p>
                             <p>
-                                I make content that share what{" "}
+                                I sometimes make content that share what{" "}
                                 <a
                                     href="https://open.spotify.com/episode/4uDoJSpjXKiFINcUOtUliR"
                                     target="_blank"
