@@ -88,10 +88,16 @@ export default function About() {
                                     i'm learning.
                                 </a>
                             </p>
+
                             <p>
-                                Deeply inspired by wonderful people who've made time for me, and a few{" "}
-                                <a href="/inspo" className="text-link hover:underline">
-                                    things online.
+                                I'm working on{" "}
+                                <a
+                                    href="https://houdys.com/"
+                                    target="_blank"
+                                    rel="noopener"
+                                    className="text-link hover:underline"
+                                >
+                                    houdys.com
                                 </a>
                             </p>
 
