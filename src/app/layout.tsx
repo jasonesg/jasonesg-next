@@ -46,9 +46,11 @@ export default function RootLayout({
       <body className={`bg-background text-foreground transition-colors duration-300 min-h-screen relative ${GeistSans.className}`}>
         {/* Core Layout Texture (Halftone) */}
         <div className="vignette-container" />
-        
+
         <NavClient />
-        {children}
+        <div className="mx-auto max-w-[960px] w-full">
+          {children}
+        </div>
       </body>
       <GoogleAnalytics gaId="G-F4EXNB5M6V" />
     </html>
