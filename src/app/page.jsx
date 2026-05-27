@@ -1,10 +1,19 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import { AnimatePresence, motion } from "motion/react";
+import { SiteFooter } from "./_components/site-footer";
+import { Tooltip, TooltipTrigger, TooltipContent } from "@/uicapsule/tooltip-grid/tooltip";
+
 import Image from "next/image";
 import { SiteFooter } from "./_components/site-footer";
 
 export default function Home() {
+  const [isSFOpen, setIsSFOpen] = useState(false);
+
   return (
     <>
-      {/* Main content wrapping: padding-top accounts for mobile fixed nav, lg:padding removes it for desktop side nav. */}
       <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[700px] lg:pl-[50px] lg:pr-0">
         <div className="pt-[80px] pb-[50px] lg:pt-[40px]">
           <header>
@@ -26,6 +35,72 @@ export default function Home() {
                 alt="irl photo of Jason"
                 fill
                 className="object-cover transition-all duration-[400ms] ease-in-out opacity-0 scale-100 group-hover:opacity-100 group-hover:scale-[1.15]"
+              />
+            </div>
+
+            {/* About section */}
+            <div className="body space-y-4 relative">
+              <p>
+                Was a{" "}
+                <a href="https://www.youtube.com/watch?v=Cdy5FhxY34A" target="_blank" rel="noopener" className="text-link hover:underline">
+                  creative photographer
+                </a>{" "}
+                in Los Angeles, pre-AI age. Now living in{" "}
+                <Tooltip open={isSFOpen} onOpenChange={setIsSFOpen}>
+                  <TooltipTrigger asChild>
+                    <span className={`cursor-help font-medium transition-all duration-300 ease-in-out ${isSFOpen ? 'relative z-[25]' : 'text-inherit border-b border-muted-foreground/30'}`}>
+                      San Francisco.
+                    </span>
+                  </TooltipTrigger>
+                  <TooltipContent
+                    type="block"
+                    style={{ position: 'fixed', top: '15%', left: '75%', transform: 'none' }}
+                    className="p-0 overflow-hidden border-none bg-transparent z-[25]"
+                  >
+                    <div className="relative w-[320px] h-[200px] rounded-lg overflow-hidden bg-slate-900/40 border border-white/5 shadow-none backdrop-blur-sm">
+                      <img
+                        src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=800&q=80"
+                        alt="San Francisco"
+                        className="absolute inset-0 w-full h-full object-cover opacity-60"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                      <div className="absolute bottom-0 left-0 p-5 w-full">
+                        <h3 className="text-white font-bold text-lg mb-0.5 tracking-tight opacity-95">Currently in</h3>
+                        <p className="text-white/70 text-sm leading-relaxed">
+                          Building and exploring in the bay area.
+                        </p>
+                      </div>
+                    </div>
+                  </TooltipContent>
+                </Tooltip>
+              </p>
+              <p>
+                Spent most of my time growing up{" "}
+                <a href="https://collegepreppodcast.com/2017/07/170-wise-budgeting-advice-teenager/" target="_blank" rel="noopener" className="text-link hover:underline">
+                  trading video game skins
+                </a>
+                , and.. being close enough to{" "}
+                <a href="https://www.youtube.com/watch?v=nPQdI2OD0IA" target="_blank" rel="noopener" className="text-link hover:underline">
+                  things that mattered.
+                </a>
+              </p>
+              <p>
+                I sometimes make content that share what{" "}
+                <a href="https://open.spotify.com/episode/4uDoJSpjXKiFINcUOtUliR" target="_blank" rel="noopener" className="text-link hover:underline">
+                  i'm learning.
+                </a>
+              </p>
+              <p>
+                My eyes are set on{" "}
+                <a href="https://houdys.com/" target="_blank" rel="noopener" className="text-link hover:underline">
+                  houdys.com
+                </a>
+              </p>
+
+              {/* Targeted Focus Blur Layer */}
+              <div
+                className={`absolute -inset-4 z-10 pointer-events-none transition-all duration-300 ease-in-out ${isSFOpen ? 'opacity-100 backdrop-blur-[0.4px] dark:backdrop-blur-[1.5px] bg-transparent' : 'opacity-0 backdrop-blur-none bg-transparent'}`}
+                style={{ willChange: 'opacity, backdrop-filter, background-color' }}
               />
             </div>
           </main>
