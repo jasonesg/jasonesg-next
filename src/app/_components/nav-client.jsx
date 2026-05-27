@@ -9,12 +9,10 @@ export function NavClient() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const pathname = usePathname();
 
-    // 0. Auto-close menu on navigation
     useEffect(() => {
         setIsMenuOpen(false);
     }, [pathname]);
 
-    // 1. Clock Functionality
     useEffect(() => {
         const updateClock = () => {
             const now = new Date();
@@ -32,7 +30,6 @@ export function NavClient() {
         return () => clearInterval(interval);
     }, []);
 
-    // 2. Auto-Theming (Tailwind 'dark' class)
     useEffect(() => {
         const htmlElement = document.documentElement;
         const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -51,7 +48,7 @@ export function NavClient() {
     }, []);
 
     return (
-        <nav className="fixed left-0 top-0 w-full px-[20px] py-[10px] border-b border-border bg-nav z-[100] transition-colors duration-300 lg:block lg:left-[40px] lg:top-[40px] lg:w-[150px] lg:!p-0 lg:border-none lg:bg-transparent md:w-full">
+        <nav className="fixed left-0 top-0 w-full px-[20px] py-[10px] border-b border-border bg-nav z-[100] transition-colors duration-300 lg:sticky lg:top-[40px] lg:left-0 lg:self-start lg:shrink-0 lg:w-[190px] lg:!p-0 lg:!pl-[40px] lg:border-none lg:bg-transparent lg:block">
             {/* Mobile Header Row */}
             <div className="flex items-center justify-between lg:hidden w-full">
                 <div className="flex items-center gap-[10px]">
@@ -66,13 +63,13 @@ export function NavClient() {
                 </button>
             </div>
 
-{/* Navigation Links Area */}
-<div className={`${isMenuOpen ? "flex" : "hidden"} flex-col items-end mt-4 overflow-hidden w-full lg:block lg:mt-0 lg:items-start`}>
-    <Link href="/" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Home</Link>
-    <Link href="/contact" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Contact</Link>
-</div>
+            {/* Navigation Links Area */}
+            <div className={`${isMenuOpen ? "flex" : "hidden"} flex-col items-end mt-4 overflow-hidden w-full lg:block lg:mt-0 lg:items-start`}>
+                <Link href="/" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Home</Link>
+                <Link href="/contact" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Contact</Link>
+            </div>
 
-            {/* Desktop Extras Area */}
+            {/* Desktop Clock */}
             <div className="hidden mt-0 items-center gap-2.5 lg:mt-[30px] lg:block">
                 <div className="font-mono text-[10pt] opacity-80" id="desktop-clock">{timeString}</div>
             </div>
