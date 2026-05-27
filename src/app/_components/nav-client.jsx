@@ -66,12 +66,11 @@ export function NavClient() {
                 </button>
             </div>
 
-            {/* Navigation Links Area */}
-            <div className={`${isMenuOpen ? "flex" : "hidden"} flex-col items-end mt-4 overflow-hidden w-full lg:block lg:mt-0 lg:items-start`}>
-                <Link href="/" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Home</Link>
-                <Link href="/about" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">About me</Link>
-                <Link href="/contact" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Contact</Link>
-            </div>
+{/* Navigation Links Area */}
+<div className={`${isMenuOpen ? "flex" : "hidden"} flex-col items-end mt-4 overflow-hidden w-full lg:block lg:mt-0 lg:items-start`}>
+    <Link href="/" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Home</Link>
+    <Link href="/contact" className="block mb-2.5 text-link hover:underline lg:block lg:mb-2.5 text-right lg:text-left">Contact</Link>
+</div>
 
             {/* Desktop Extras Area */}
             <div className="hidden mt-0 items-center gap-2.5 lg:mt-[30px] lg:block">
