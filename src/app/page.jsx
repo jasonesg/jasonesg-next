@@ -2,12 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { AnimatePresence, motion } from "motion/react";
 import { SiteFooter } from "./_components/site-footer";
 import { Tooltip, TooltipTrigger, TooltipContent } from "@/uicapsule/tooltip-grid/tooltip";
-
-import Image from "next/image";
-import { SiteFooter } from "./_components/site-footer";
 
 export default function Home() {
   const [isSFOpen, setIsSFOpen] = useState(false);
