@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const pages = [
     { href: "/", label: "Home" },
-    { href: "/about", label: "About me" },
     { href: "/contact", label: "Contact" },
 ];
 
