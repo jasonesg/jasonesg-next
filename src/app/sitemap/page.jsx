@@ -4,9 +4,7 @@ import Link from "next/link";
 const pages = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About me" },
-    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
-    { href: "/inspo", label: "Inspo" },
 ];
 
 export default function Sitemap() {
