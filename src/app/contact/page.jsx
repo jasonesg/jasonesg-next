@@ -3,7 +3,7 @@ import { SiteFooter } from "../_components/site-footer";
 export default function Contact() {
     return (
         <>
-            <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[700px] lg:pl-[50px] lg:pr-0">
+            <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[640px]">
                 <div className="pt-[80px] pb-[50px] lg:pt-[40px]">
                     <header>
                         <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">Contact me</h1>
