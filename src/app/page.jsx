@@ -83,7 +83,7 @@ export default function Home() {
                   <a href="https://ismbags.com/" target="_blank" rel="noopener" className="text-link hover:underline">
                     fashion brand
                   </a>{" "}
-                  that scaled to $2m at 20 years old.
+                  that scaled to $1m at 20 years old.
                 </p>
                 <p>
                   After all that, I started working for{" "}
