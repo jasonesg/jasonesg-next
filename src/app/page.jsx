@@ -86,11 +86,11 @@ export default function Home() {
                   that scaled to $1m at 20 years old.
                 </p>
                 <p>
-                  While working remotely at{" "}
+                  After all that, I started working for{" "}
                   <a href="https://goat.com/" target="_blank" rel="noopener" className="text-link hover:underline">
                     GOAT
                   </a>{" "}
-                  focused on CX, I've also contributed to a{" "}
+                  focused on CX. During this tenure, I've also contributed to a{" "}
                   <a href="https://nano.org/en" target="_blank" rel="noopener" className="text-link hover:underline">
                     non-profit cryptocurrency
                   </a>{" "}
