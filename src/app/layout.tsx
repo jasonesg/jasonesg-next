@@ -47,9 +47,11 @@ export default function RootLayout({
         {/* Core Layout Texture (Halftone) */}
         <div className="vignette-container" />
 
-        <NavClient />
-        <div className="mx-auto max-w-[960px] w-full">
-          {children}
+        <div className="lg:flex lg:mx-auto lg:max-w-[960px]">
+          <NavClient />
+          <div className="flex-1 min-w-0">
+            {children}
+          </div>
         </div>
       </body>
       <GoogleAnalytics gaId="G-F4EXNB5M6V" />
