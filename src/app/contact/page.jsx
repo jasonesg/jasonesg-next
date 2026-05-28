@@ -6,20 +6,20 @@ export default function Contact() {
             <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[720px]">
                 <div className="pt-[80px] pb-[50px] lg:pt-[40px]">
                     <header>
-                        <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">Contact me</h1>
+                        <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">Contact</h1>
                     </header>
 
                     <main role="main">
                         <div className="space-y-4">
                             <p>
-                                For other queries please email me directly @{" "}
+                                For any queries, email me directly @{" "}
                                 <a href="mailto:jason@taskboard.org" className="text-link hover:underline">
                                     jason@taskboard.org
                                 </a>
                             </p>
 
                             <p className="socials" aria-label="Social links">
-                                Check out my{" "}
+                                You can find more about me via{" "}
                                 <a
                                     href="https://twitter.com/jasonesg"
                                     target="_blank"
