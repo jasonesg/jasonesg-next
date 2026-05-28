@@ -43,15 +43,13 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`bg-background text-foreground transition-colors duration-300 min-h-screen relative ${GeistSans.className}`}>
+      <body className={`bg-background text-foreground transition-colors duration-300 min-h-screen relative lg:flex lg:items-start ${GeistSans.className}`}>
         {/* Core Layout Texture (Halftone) */}
         <div className="vignette-container" />
 
-        <div className="lg:flex lg:mx-auto lg:max-w-[960px]">
-          <NavClient />
-          <div className="flex-1 min-w-0">
-            {children}
-          </div>
+        <NavClient />
+        <div className="flex-1 min-w-0">
+          {children}
         </div>
       </body>
       <GoogleAnalytics gaId="G-F4EXNB5M6V" />
