@@ -107,11 +107,11 @@ export default function Home() {
                   <a href="https://www.coindesk.com/business/2021/11/17/a16z-leads-31m-funding-round-for-mems-social-media-protocol" target="_blank" rel="noopener" className="text-link hover:underline">
                     Mem
                   </a>{" "}
-                  as an IC that focused on video content. Designed a{" "}
+                  as an IC that focused on video content. We created an in-house production playbook and designed a{" "}
                   <a href="https://x.com/jasonesg/status/2016445178035487194?s=46" target="_blank" rel="noopener" className="text-link hover:underline">
                     modular studio
                   </a>{" "}
-                  set and authored an in-house production playbook.
+                  set.
                 </p>
                 <p>
                   I owe a lot of my career to the internet and the people that have also starved with me side-by-side.
