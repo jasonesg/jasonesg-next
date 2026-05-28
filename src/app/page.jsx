@@ -100,7 +100,7 @@ export default function Home() {
                   . Empowering the foundation's reach and compliance.
                 </p>
                 <p>
-                  Upon being commissioned by the board of directors for the project, I was allowed the opportunity to craft educational pieces of content with a focus on simplifying highly technical jargon to the regular viewer.
+                  From there, the board commissioned me to craft content that made highly technical concepts digestible for everyday people.
                 </p>
                 <p>
                   This led me to collaborate with the team at{" "}
