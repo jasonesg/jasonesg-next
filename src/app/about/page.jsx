@@ -10,7 +10,7 @@ export default function About() {
 
     return (
         <>
-            <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[640px]">
+            <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[720px]">
                 <div className="pt-[80px] pb-[50px] lg:pt-[40px]">
                     <header>
                         <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">So.. about me.</h1>

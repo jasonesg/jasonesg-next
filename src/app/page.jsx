@@ -10,7 +10,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[640px]">
+      <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[720px]">
         <div className="pt-[80px] pb-[50px] lg:pt-[40px]">
           <header>
             <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">Hi, i'm @jasonesg</h1>
@@ -107,7 +107,7 @@ export default function Home() {
                   <a href="https://www.coindesk.com/business/2021/11/17/a16z-leads-31m-funding-round-for-mems-social-media-protocol" target="_blank" rel="noopener" className="text-link hover:underline">
                     Mem Protocol
                   </a>{" "}
-                  as an IC that focused on content. Designed a modular studio set and authored an in-house production playbook.
+                  as an IC that focused on video content. Designed a modular studio set and authored an in-house production playbook.
                 </p>
                 <p>
                   My pursuits span the spectrum from web development, video production, brand marketing, AND a good yap sesh in-between.
