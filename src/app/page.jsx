@@ -13,7 +13,7 @@ export default function Home() {
       <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[640px]">
         <div className="pt-[80px] pb-[50px] lg:pt-[40px]">
           <header>
-            <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">Hey, i'm @jasonesg!</h1>
+            <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">Hi, i'm @jasonesg</h1>
           </header>
 
           <main role="main">

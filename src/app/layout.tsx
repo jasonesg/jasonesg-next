@@ -8,7 +8,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Jason Esguerra",
-  description: "Personal portfolio and blog of Jason Esguerra.",
+  description: "New day, Houdys?",
+  icons: {
+    icon: "/images/fill-color-1.png",
+  },
   openGraph: {
     images: ["/images/jason-irl.jpg"],
   },
