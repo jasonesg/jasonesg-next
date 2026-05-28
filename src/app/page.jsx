@@ -68,35 +68,39 @@ export default function Home() {
                   </Tooltip>
                 </p>
                 <p>
-                  Before chatGPT, I spent most of my time growing up in Los Angeles as a{" "}
+                  Pre-chatGPT, I spent most of my time growing up in Los Angeles as a{" "}
                   <a href="https://www.youtube.com/watch?v=Cdy5FhxY34A" target="_blank" rel="noopener" className="text-link hover:underline">
                     photographer
                   </a>{" "}
-                  and trading video game skins to get through university.
+                  and{" "}
+                  <a href="https://collegepreppodcast.com/2017/07/170-wise-budgeting-advice-teenager/" target="_blank" rel="noopener" className="text-link hover:underline">
+                    trading video game skins
+                  </a>{" "}
+                  to get through university.
                 </p>
                 <p>
                   After I was finished with college in LA, I landed my first full-time job as a digital marketer for a{" "}
                   <a href="https://ismbags.com/" target="_blank" rel="noopener" className="text-link hover:underline">
                     SF fashion brand
                   </a>{" "}
-                  that scaled to $1m at 20 years old and committed to help create brands full time.
+                  that scaled to $1m at 20 years old and since then I've committed to help create brands full time.
                 </p>
                 <p>
-                  I owe a lot of my career to the internet and the people that have starved with me side-by-side.
+                  I owe a lot of my career to the internet and the people that have starved with my side-by-side.
                 </p>
                 <p>
-                  While working at{" "}
+                  While working remotely at{" "}
                   <a href="https://goat.com/" target="_blank" rel="noopener" className="text-link hover:underline">
                     GOAT
                   </a>
-                  , I've contributed to a{" "}
+                  , I've also contributed to a{" "}
                   <a href="https://xno.nano.org/" target="_blank" rel="noopener" className="text-link hover:underline">
                     non-profit cryptocurrency
                   </a>{" "}
                   based in the UK which was later rebranded to Ӿ. Empowering the foundation's reach and compliance.
                 </p>
                 <p>
-                  After being commissioned by the board of directors for the open source project, I saw the opportunity in creating educational pieces of content with a focus on simplifying highly technical jargon to the regular viewer.
+                  Upon being commissioned by the board of directors for the project, this allowed me to see the opportunity in creating educational pieces of content with a focus on simplifying highly technical jargon to the regular viewer.
                 </p>
                 <p>
                   This led me to collaborate with the team at{" "}
@@ -106,7 +110,7 @@ export default function Home() {
                   as an IC that focused on content. Designed a modular studio set and authored an in-house production playbook.
                 </p>
                 <p>
-                  I'm continuously in search of people that are thrifty and technologists. And maybe have also seen one of my favorite films, The Place Beyond the Pines.
+                  I'm continuously in search of people that are thrifty-technologists. And perhaps have also seen one of my favorite films, The Place Beyond the Pines.
                 </p>
 
                 {/* Targeted Focus Blur Layer */}
