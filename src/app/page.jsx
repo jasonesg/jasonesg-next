@@ -93,8 +93,7 @@ export default function Home() {
                   focused on CX. During this tenure, I've also contributed to a{" "}
                   <a href="https://nano.org/en" target="_blank" rel="noopener" className="text-link hover:underline">
                     non-profit cryptocurrency
-                  </a>{" "}
-                  . We later rebranded to{" "}
+                  </a>. We later rebranded to{" "}
                   <a href="https://xno.nano.org/" target="_blank" rel="noopener" className="text-link hover:underline">
                     Ӿ
                   </a>
