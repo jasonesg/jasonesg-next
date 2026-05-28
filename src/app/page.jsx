@@ -105,7 +105,7 @@ export default function Home() {
                 <p>
                   This led me to collaborate with the team at{" "}
                   <a href="https://www.coindesk.com/business/2021/11/17/a16z-leads-31m-funding-round-for-mems-social-media-protocol" target="_blank" rel="noopener" className="text-link hover:underline">
-                    Mem Protocol
+                    Mem
                   </a>{" "}
                   as an IC that focused on video content. Designed a{" "}
                   <a href="https://x.com/jasonesg/status/2016445178035487194?s=46" target="_blank" rel="noopener" className="text-link hover:underline">
