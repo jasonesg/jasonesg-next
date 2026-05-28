@@ -79,7 +79,7 @@ export default function Home() {
                   to get through university.
                 </p>
                 <p>
-                  After I was finished with college in LA, I landed my first full-time job as a digital marketer for a{" "}
+                  Post-college in LA, I landed my first full-time job as a digital marketer for a{" "}
                   <a href="https://ismbags.com/" target="_blank" rel="noopener" className="text-link hover:underline">
                     fashion brand
                   </a>{" "}
