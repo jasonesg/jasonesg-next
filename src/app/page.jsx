@@ -38,15 +38,11 @@ export default function Home() {
               {/* About section */}
               <div className="body space-y-4 relative">
                 <p>
-                  Was a{" "}
-                  <a href="https://www.youtube.com/watch?v=Cdy5FhxY34A" target="_blank" rel="noopener" className="text-link hover:underline">
-                    creative photographer
-                  </a>{" "}
-                  in Los Angeles, pre-AI age. Now living in{" "}
+                  I'm a creative director by intuition and a technologist by trade. I'm based in{" "}
                   <Tooltip open={isSFOpen} onOpenChange={setIsSFOpen}>
                     <TooltipTrigger asChild>
                       <span className={`cursor-help font-medium transition-all duration-300 ease-in-out ${isSFOpen ? 'relative z-[25]' : 'text-inherit border-b border-muted-foreground/30'}`}>
-                        San Francisco.
+                        San Francisco, California.
                       </span>
                     </TooltipTrigger>
                     <TooltipContent
@@ -72,26 +68,45 @@ export default function Home() {
                   </Tooltip>
                 </p>
                 <p>
-                  Spent most of my time growing up{" "}
-                  <a href="https://collegepreppodcast.com/2017/07/170-wise-budgeting-advice-teenager/" target="_blank" rel="noopener" className="text-link hover:underline">
-                    trading video game skins
-                  </a>
-                  , and.. being close enough to{" "}
-                  <a href="https://www.youtube.com/watch?v=nPQdI2OD0IA" target="_blank" rel="noopener" className="text-link hover:underline">
-                    things that mattered.
-                  </a>
+                  Before chatGPT, I spent most of my time growing up in Los Angeles as a{" "}
+                  <a href="https://www.youtube.com/watch?v=Cdy5FhxY34A" target="_blank" rel="noopener" className="text-link hover:underline">
+                    photographer
+                  </a>{" "}
+                  and trading video game skins to get through university.
                 </p>
                 <p>
-                  I sometimes make content that share what{" "}
-                  <a href="https://open.spotify.com/episode/4uDoJSpjXKiFINcUOtUliR" target="_blank" rel="noopener" className="text-link hover:underline">
-                    i'm learning.
-                  </a>
+                  After I was finished with college in LA, I landed my first full-time job as a digital marketer for a{" "}
+                  <a href="https://ismbags.com/" target="_blank" rel="noopener" className="text-link hover:underline">
+                    SF fashion brand
+                  </a>{" "}
+                  that scaled to $1m at 20 years old and committed to help create brands full time.
                 </p>
                 <p>
-                  My eyes are set on{" "}
-                  <a href="https://houdys.com/" target="_blank" rel="noopener" className="text-link hover:underline">
-                    houdys.com
+                  I owe a lot of my career to the internet and the people that have starved with me side-by-side.
+                </p>
+                <p>
+                  While working at{" "}
+                  <a href="https://goat.com/" target="_blank" rel="noopener" className="text-link hover:underline">
+                    GOAT
                   </a>
+                  , I've contributed to a{" "}
+                  <a href="https://xno.nano.org/" target="_blank" rel="noopener" className="text-link hover:underline">
+                    non-profit cryptocurrency
+                  </a>{" "}
+                  based in the UK which was later rebranded to Ӿ. Empowering the foundation's reach and compliance.
+                </p>
+                <p>
+                  After being commissioned by the board of directors for the open source project, I saw the opportunity in creating educational pieces of content with a focus on simplifying highly technical jargon to the regular viewer.
+                </p>
+                <p>
+                  This led me to collaborate with the team at{" "}
+                  <a href="https://www.coindesk.com/business/2021/11/17/a16z-leads-31m-funding-round-for-mems-social-media-protocol" target="_blank" rel="noopener" className="text-link hover:underline">
+                    Mem Protocol
+                  </a>{" "}
+                  as an IC that focused on content. Designed a modular studio set and authored an in-house production playbook.
+                </p>
+                <p>
+                  I'm continuously in search of people that are thrifty and technologists. And maybe have also seen one of my favorite films, The Place Beyond the Pines.
                 </p>
 
                 {/* Targeted Focus Blur Layer */}
