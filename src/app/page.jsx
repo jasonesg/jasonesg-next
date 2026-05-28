@@ -79,7 +79,11 @@ export default function Home() {
                   to get through university.
                 </p>
                 <p>
-                  After I was finished with college in LA, I landed my first full-time job as a digital marketer for a fashion brand that scaled to $1m at 20 years old and since then I've committed to help create brands full time.
+                  After I was finished with college in LA, I landed my first full-time job as a digital marketer for a{" "}
+                  <a href="https://ismbags.com/" target="_blank" rel="noopener" className="text-link hover:underline">
+                    fashion brand
+                  </a>{" "}
+                  that scaled to $1M at 20 years old and since then I've committed to help create brands full time.
                 </p>
                 <p>
                   I owe a lot of my career to the internet and the people that have starved with me side-by-side.
@@ -89,11 +93,11 @@ export default function Home() {
                   <a href="https://goat.com/" target="_blank" rel="noopener" className="text-link hover:underline">
                     GOAT
                   </a>{" "}
-                  with a focus on CX, I've also contributed to a{" "}
+                  focused on CX, I've also contributed to a non-profit cryptocurrency based in the UK which was later rebranded to{" "}
                   <a href="https://xno.nano.org/" target="_blank" rel="noopener" className="text-link hover:underline">
-                    non-profit cryptocurrency
-                  </a>{" "}
-                  based in the UK which was later rebranded to Ӿ. Empowering the foundation's reach and compliance.
+                    Ӿ
+                  </a>
+                  . Empowering the foundation's reach and compliance.
                 </p>
                 <p>
                   Upon being commissioned by the board of directors for the project, this allowed me to see the opportunity in crafting educational pieces of content with a focus on simplifying highly technical jargon to the regular viewer.
@@ -106,7 +110,10 @@ export default function Home() {
                   as an IC that focused on content. Designed a modular studio set and authored an in-house production playbook.
                 </p>
                 <p>
-                  My pursuits span the spectrum from web development, video production, brand marketing, AND a good yap sesh in-between. I'm continuously in search of people that are thrifty-technologists.
+                  My pursuits span the spectrum from web development, video production, brand marketing, AND a good yap sesh in-between.
+                </p>
+                <p>
+                  I'm continuously in search of like-minded people that are thrifty, witty, and litty.
                 </p>
 
                 {/* Targeted Focus Blur Layer */}
