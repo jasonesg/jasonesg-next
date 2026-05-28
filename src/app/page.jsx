@@ -79,7 +79,11 @@ export default function Home() {
                   to get through university.
                 </p>
                 <p>
-                  After I was finished with college in LA, I landed my first full-time job as a digital marketer for a fashion brand that scaled to $1m at 20 years old and since then I've committed to help create brands full time.
+                  After I was finished with college in LA, I landed my first full-time job as a digital marketer for a{" "}
+                  <a href="https://ismbags.com/" target="_blank" rel="noopener" className="text-link hover:underline">
+                    fashion brand
+                  </a>{" "}
+                  that scaled to $1m at 20 years old and since then I've committed to help create brands full time.
                 </p>
                 <p>
                   I owe a lot of my career to the internet and the people that have also starved with me side-by-side.
