@@ -48,7 +48,7 @@ export function NavClient() {
     }, []);
 
     return (
-        <nav className="fixed left-0 top-0 w-full px-[20px] py-[10px] border-b border-border bg-nav z-[100] transition-colors duration-300 lg:sticky lg:top-[40px] lg:left-0 lg:self-start lg:shrink-0 lg:w-[190px] lg:!p-0 lg:!pl-[40px] lg:border-none lg:bg-transparent lg:block">
+        <nav className="fixed left-0 top-0 w-full px-[20px] py-[10px] border-b border-border bg-nav z-[100] transition-colors duration-300 lg:fixed lg:top-[40px] lg:left-0 lg:self-start lg:shrink-0 lg:w-[190px] lg:!p-0 lg:!pl-[40px] lg:border-none lg:bg-transparent lg:block">
             {/* Mobile Header Row */}
             <div className="flex items-center justify-between lg:hidden w-full">
                 <div className="flex items-center gap-[10px]">
