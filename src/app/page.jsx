@@ -113,7 +113,7 @@ export default function Home() {
                   </a>.
                 </p>
                 <p>
-                  I owe a lot of my career to the internet and the people that have also starved with me side-by-side.
+                  I owe a lot of my craft to the internet and the people that have also starved with me side-by-side.
                 </p>
                 <p>
                   My pursuits span the spectrum from web development, video production, brand marketing, AND a good yap sesh in-between.
