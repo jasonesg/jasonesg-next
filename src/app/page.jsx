@@ -94,7 +94,7 @@ export default function Home() {
                   <a href="https://nano.org/en" target="_blank" rel="noopener" className="text-link hover:underline">
                     non-profit cryptocurrency
                   </a>{" "}
-                  based in the UK which was later rebranded to{" "}
+                  . We later rebranded to{" "}
                   <a href="https://xno.nano.org/" target="_blank" rel="noopener" className="text-link hover:underline">
                     Ӿ
                   </a>
