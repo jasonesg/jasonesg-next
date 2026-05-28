@@ -83,10 +83,7 @@ export default function Home() {
                   <a href="https://ismbags.com/" target="_blank" rel="noopener" className="text-link hover:underline">
                     fashion brand
                   </a>{" "}
-                  that scaled to $1m at 20 years old and since then I've committed to help create brands full time.
-                </p>
-                <p>
-                  I owe a lot of my career to the internet and the people that have also starved with me side-by-side.
+                  that scaled to $1m at 20 years old.
                 </p>
                 <p>
                   While working remotely at{" "}
@@ -112,6 +109,9 @@ export default function Home() {
                     Mem Protocol
                   </a>{" "}
                   as an IC that focused on video content. Designed a modular studio set and authored an in-house production playbook.
+                </p>
+                <p>
+                  I owe a lot of my career to the internet and the people that have also starved with me side-by-side.
                 </p>
                 <p>
                   My pursuits span the spectrum from web development, video production, brand marketing, AND a good yap sesh in-between.
