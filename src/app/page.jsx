@@ -119,7 +119,7 @@ export default function Home() {
                   My pursuits span the spectrum from web development, video production, brand marketing, AND a good yap sesh in-between.
                 </p>
                 <p>
-                  I'm continuously in search of like-minded people that are gritty and witty.
+                  Continuously in search of like-minded people that are gritty and witty. Building for the undercards and the underdogs.
                 </p>
 
                 {/* Targeted Focus Blur Layer */}
