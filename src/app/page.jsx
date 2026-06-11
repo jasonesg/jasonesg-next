@@ -74,7 +74,7 @@ export default function Home() {
                   </a>{" "}
                   and{" "}
                   <a href="https://collegepreppodcast.com/2017/07/170-wise-budgeting-advice-teenager/" target="_blank" rel="noopener" className="text-link hover:underline">
-                    trading video game skins
+                    flipping DotA2/CS:GO skins
                   </a>{" "}
                   to get through university.
                 </p>
