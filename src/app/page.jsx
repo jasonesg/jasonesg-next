@@ -80,7 +80,7 @@ export default function Home() {
                 </p>
                 <p>
                   Post-college in LA, I landed my first full-time job as a digital marketer for a{" "}
-                  <a href="https://ismbags.com/" target="_blank" rel="noopener" className="text-link hover:underline">
+                  <a href="https://www.instagram.com/ismbags" target="_blank" rel="noopener" className="text-link hover:underline">
                     fashion brand
                   </a>{" "}
                   that scaled to $1.6m at 20 years old.
