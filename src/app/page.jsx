@@ -13,7 +13,7 @@ export default function Home() {
       <div className="w-full max-w-full px-[20px] mx-auto transition-colors duration-300 lg:max-w-[690px]">
         <div className="pt-[80px] pb-[50px] lg:pt-[40px]">
           <header>
-            <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">Hi, i'm @jasonesg</h1>
+            <h1 className="text-[2em] font-bold tracking-tight mb-[30px] leading-[1.2]">Hello, i'm @jasonesg</h1>
           </header>
 
           <main role="main">
@@ -119,7 +119,7 @@ export default function Home() {
                   My pursuits span the spectrum from web development, video production, brand marketing, AND a good yap sesh in-between.
                 </p>
                 <p>
-                  Continuously in search of like-minded people that are gritty and witty. Building for the undercards and the underdogs.
+                  Continuously in search of like-minded people that are witty while building something new for the underdogs.
                 </p>
 
                 {/* Targeted Focus Blur Layer */}
