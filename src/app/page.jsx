@@ -73,7 +73,7 @@ export default function Home() {
                     photographer
                   </a>{" "}
                   and{" "}
-                  <a href="https://collegepreppodcast.com/2017/07/170-wise-budgeting-advice-teenager/" target="_blank" rel="noopener" className="text-link hover:underline">
+                  <a href="https://steamrep.com/profiles/76561198063462723" target="_blank" rel="noopener" className="text-link hover:underline">
                     flipping DotA2 skins
                   </a>{" "}
                   to get through university.
