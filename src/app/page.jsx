@@ -74,7 +74,7 @@ export default function Home() {
                   </a>{" "}
                   and{" "}
                   <a href="https://steamrep.com/profiles/76561198063462723" target="_blank" rel="noopener" className="text-link hover:underline">
-                    flipping DotA2 skins
+                    flipping DotA2 items
                   </a>{" "}
                   to get through university.
                 </p>
