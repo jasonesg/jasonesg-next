@@ -7,6 +7,7 @@ import { GeistSans } from 'geist/font/sans';
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jasonesg.la"),
   title: "Jason Esguerra",
   description: "New day, Houdys?",
   icons: {
