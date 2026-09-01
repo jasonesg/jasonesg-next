@@ -29,12 +29,12 @@ export default function Contact() {
                                     twtr
                                 </a>
                                 <a
-                                    href="https://instagram.com/jasonesg/"
+                                    href="https://www.youtube.com/@jasonesg"
                                     target="_blank"
                                     rel="noopener"
                                     className="text-link hover:underline mr-[10px]"
                                 >
-                                    insta
+                                    youtube
                                 </a>
                                 <a
                                     href="https://tiktok.com/@jasonesg"
